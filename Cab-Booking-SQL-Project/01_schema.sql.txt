@@ -1,0 +1,53 @@
+CREATE DATABASE cb;
+USE cb;
+CREATE TABLE Customers(
+CustomerID INT PRIMARY KEY, 
+Name VARCHAR(100),
+Email VARCHAR(100),
+RegistrationDATE date
+);
+
+CREATE TABLE Drivers (
+ DriverID INT PRIMARY KEY, 
+Name VARCHAR(100),
+JoinDate DATE
+);
+
+CREATE TABLE Cabs ( 
+CabID INT PRIMARY KEY,
+DriverID INT,
+VehicleType VARCHAR(20),
+PlateNumber VARCHAR(20),
+FOREIGN KEY (DriverID) REFERENCES Drivers (DriverID)
+);
+
+CREATE TABLE Bookings (
+BookingID INT PRIMARY KEY,
+CustomerID INT,
+CabID INT,
+BookingDate DATETIME,
+Status VARCHAR(20),
+PickupLocation VARCHAR(100),
+DropLocation VARCHAR(100), 
+FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+FOREIGN KEY (CabID) REFERENCES Cabs(CabID)
+);
+
+CREATE TABLE TripDetails (
+TripID INT PRIMARY KEY,
+BookingID INT,
+StartTime DATETIME,
+EndTime DATETIME,
+DistanceKM FLOAT,
+Fare FLOAT,
+FOREIGN KEY (BookingID) REFERENCES Bookings(BookingID)
+);
+
+CREATE TABLE Feedback (
+FeedbackID INT PRIMARY KEY,
+BookingID INT,
+Rating FLOAT,
+Comments TEXT,
+FeedbackDate DATE,
+FOREIGN KEY (BookingID) REFERENCES Bookings(BookingID)
+);
