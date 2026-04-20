@@ -1,90 +1,117 @@
-#SQL-based Cab Booking Data Analysis Project
+# 🚖 Cab Booking SQL Data Analysis Project
 
-##Project Overview
-This project simulates a real-world cab booking system using SQL.
-It focuses on storing structured data and performing analysis to generate meaningful business insights.
+## 📌 Project Overview
 
-The project covers:
-- Database design (schema creation)
-- Data insertion (20+ records per table)
-- SQL-based analysis
-- Business insights generation
+This project simulates a real-world cab booking system using SQL. It focuses on designing a relational database and performing data analysis to generate meaningful business insights related to customer behavior, driver performance, and revenue trends.
 
 ---
 
-#Objectives
-- To design a relational database system
-- To analyze customer booking behavior
-- To evaluate driver performance
-- To measure revenue and operational efficiency
-- To extract actionable business insights using SQL
+## 🧩 ER Diagram
+
+![ER Diagram](ER_Diagram.png)
 
 ---
 
-#Database Schema
-The project consists of the following tables:
+## 🎯 Objectives
 
-1. Customers
-2. Drivers
-3. Cabs
-4. Bookings
-5. TripDetails
-6. Feedback
+* Design a structured relational database system
+* Analyze customer booking behavior
+* Evaluate driver performance
+* Measure revenue and operational efficiency
+* Generate actionable business insights using SQL
 
 ---
 
-#Technologies Used
-- MySQL
-- SQL
+## 🗂️ Database Schema
+
+The project includes the following tables:
+
+* Customers
+* Drivers
+* Cabs
+* Bookings
+* TripDetails
+* Feedback
 
 ---
 
-#Key Analysis Performed
+## ⚙️ Technologies Used
 
-/ Customer Analysis
-- Identified top customers based on completed bookings
-- Analyzed customers with frequent cancellations
-
-/ Driver Analysis
-- Measured average driver ratings
-
-/ Revenue Analysis
-- Calculated total revenue
-- Analyzed earnings per driver
-
-/ Operational Insights
-- Identified most popular routes
-- Analyzed booking status distribution
+* MySQL
+* SQL
 
 ---
 
-#Sample Business Insights
+## 📊 Key Analysis Performed
 
-- High-frequency customers contribute significantly to revenue
-- Certain users show high cancellation behavior
-- Drivers with higher ratings tend to perform better
-- Some routes have consistently higher demand
-- Average waiting time impacts customer satisfaction
+### 👤 Customer Analysis
+
+* Identified top customers based on completed bookings
+* Analyzed customers with frequent cancellations
+
+### 🚗 Driver Analysis
+
+* Calculated average driver ratings
+* Evaluated driver earnings
+
+### 💰 Revenue Analysis
+
+* Calculated total revenue
+* Analyzed fare distribution
+
+### 📍 Operational Insights
+
+* Identified most popular routes
+* Analyzed booking status distribution
+* Determined peak booking day
 
 ---
 
-#Project Structure
+## 🧠 Sample Business Insights
+
+* High-frequency customers contribute significantly to total revenue
+* Some users exhibit high cancellation behavior
+* Higher-rated drivers tend to perform better
+* Certain routes consistently show higher demand
+* Trip distance directly impacts fare and revenue
+
+---
+
+## 📁 Project Structure
 
 Cab-Booking-SQL-Project/
-│── schema.sql        # Table creation queries
-│── data.sql          # Insert data queries
-│── analysis.sql      # Business analysis queries
-│── README.md         # Project documentation
-
----
-#Key Learnings
-
-- Understanding relational database design
-- Writing optimized SQL queries
-- Performing real-world data analysis
-- Converting data into actionable insights
+│── 01_schema.sql
+│── 02_data.sql
+│── 03_analysis.sql
+│── ER_Diagram.png
+│── README.md
 
 ---
 
-#Conclusion
-This project demonstrates how SQL can be used to analyze business data and support decision-making in a real-world cab booking system.
+## ▶️ How to Run the Project
+
+1. Run `01_schema.sql` to create the database and tables
+2. Run `02_data.sql` to insert sample data
+3. Run `03_analysis.sql` to perform analysis
+
+---
+
+## 📚 Key Learnings
+
+* Relational database design
+* Writing optimized SQL queries
+* Performing real-world data analysis
+* Converting raw data into actionable insights
+
+---
+
+## 🏁 Conclusion
+
+This project demonstrates how SQL can be used to analyze business data and support data-driven decision-making in a cab booking system.
+
+---
+
+## ⭐ If you like this project
+
+Feel free to star ⭐ the repository and share feedback!
+
